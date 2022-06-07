@@ -1,4 +1,6 @@
 import {Navbar, Container, Nav} from 'react-bootstrap'
+import CartWidget from "./CartWidget/index";
+
 
 function NavBar() {
   return (
@@ -10,7 +12,10 @@ function NavBar() {
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
-        </Nav>
+        </Nav> 
+          <Nav.Link href="#">
+            <CartWidget/>
+          </Nav.Link>        
       </Container>
     </Navbar>    
   </>
